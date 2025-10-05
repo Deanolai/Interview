@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * 机票价格计算程序 - 根据月份和舱位类型计算折扣后的票价
  */
@@ -12,7 +11,6 @@ public class CalculateTicket {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
         // 获取用户输入的基本信息
         System.out.println("请输入机票原价：");
         double ticket = input.nextDouble();
@@ -20,7 +18,6 @@ public class CalculateTicket {
         int month = input.nextInt();
         System.out.println("请输入舱位类型（头等舱/经济舱）：");
         String seatType = input.next();
-
         // 先检查月份是否合法
         if (month < 1 || month > 12) {
             System.out.println("您输入的月份不合规");
@@ -63,4 +60,5 @@ public class CalculateTicket {
             return ticket;
         }
     }
+
 }
