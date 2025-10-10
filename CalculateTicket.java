@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/**
+/*
  * 机票价格计算程序 - 根据月份和舱位类型计算折扣后的票价
  */
 public class CalculateTicket {
@@ -39,7 +39,7 @@ public class CalculateTicket {
         input.close(); // 记得关闭扫描器，好习惯
     }
 
-    /**
+    /*
      * 计算实际票价的方法
      * @param ticket 原价
      * @param seatType 舱位类型
@@ -60,5 +60,4 @@ public class CalculateTicket {
             return ticket;
         }
     }
-
 }
